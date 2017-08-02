@@ -17,7 +17,7 @@ sub-problems share sub-sub-problems.
 
 DP only computes the solution to each of the common sub-sub-problems once by storing the result in a
 table. The next time DP encounters the common sub-sub-problem, it will just look up the result from
-the table, thus avoiding costy recomputation.
+the table, thus avoiding costly recomputation.
 
 Usually applicable to **optimization problems**, where a problem might have many solutions and we
 want to get to any solution with the optimal value.
@@ -30,3 +30,31 @@ optimal solutions to sub-problems. For example, `f(n) = f(n - 1) + f(n - 2)`.
 This is where the speed up comes from. When a problem has overlapping sub-problems, we can store the
 result when we first compute it in a table. By looking up the solution for subsequent overlapping
 sub-problems, we are reducing the cost of computing the given sub-problem to `O(1)` time.
+
+## Practical step-by-step
+### Figuring out the recurrence
+The recursive formula is crucial to defining the table. But, coming up with a recursive formula to a
+given problem is not trivial. Instead, try reverse engineering. Assume that table dp[i] works and
+try to figure out the definitions of i and dp[i] that work. If it seems to be impossible, move up to
+dp[i][j] and try to figure out what each of the components should mean. If it is still not viable,
+move up again and so on.
+
+### Choosing the choice
+For given table cell to fill, we usually have to choose the optimal value among several possible
+choices. The table correctness rely on the choices we make to be correct. Do a few examples, to come
+up with the correct way to choose them.
+
+### Building up the table
+First, start with filling up the base case for the table. This is easy if you have well-defined
+recurrence formula.
+
+Second, iterate the table from bottom-up. This is easy if your table is one-dimentional, but it can
+get trickier with more dimensions. Make sure to build up the table so for each f(n), the table has
+all the information it needs to correctly compute the optimal solution for f(n).
+
+### Returning the result
+When the table construction is complete, we can now get our final result. If the table is built
+correctly, the final result is guaranteed to be optimal.
+
+## Practice problems
+1. [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
