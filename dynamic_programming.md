@@ -22,7 +22,7 @@ the table, thus avoiding costy recomputation.
 Usually applicable to **optimization problems**, where a problem might have many solutions and we
 want to get to any solution with the optimal value.
 
-## Requirements that any optimization problem needs to have to be applicable to DP
+## Requirements for any optimization problem to be applicable to DP
 ### Exhibit optimal sub-structure
 A problem has optimal sub-structure when the optimal solution to the problem contain within it,
 optimal solutions to sub-problems. For example, `f(n) = f(n - 1) + f(n - 2)`.
