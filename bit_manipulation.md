@@ -11,14 +11,14 @@
 
 ## Truth tables
 
-**NEGATION (~)**
+### NEGATION, ~
 
 |Input       |Output      |
 |------------|------------|
 |0           |1           |
 |1           |0           |
 
-**OR (|)**
+### OR, |
 
 |Input 1     |Input 2     |Output      |
 |------------|------------|------------|
@@ -27,7 +27,7 @@
 |1           |0           |1           |
 |1           |1           |1           |
 
-**AND (&)**
+### AND, &
 
 |Input 1     |Input 2     |Output      |
 |------------|------------|------------|
@@ -36,7 +36,7 @@
 |1           |0           |0           |
 |1           |1           |1           |
 
-**XOR (^)**
+### XOR, ^
 
 |Input 1     |Input 2     |Output      |
 |------------|------------|------------|
@@ -47,7 +47,7 @@
 
 ## Notable results
 
-**OR (|)**
+### OR, |
 
 |              |              |
 |--------------|--------------|
@@ -55,7 +55,7 @@
 |x ^ 1...1     |~x            |
 |x ^ x         |0...0         |
 
-**AND (&)**
+### AND, &
 
 |              |              |
 |--------------|--------------|
@@ -63,7 +63,7 @@
 |x & 1...1     |x             |
 |x & x         |x             |
 
-**XOR (^)**
+### XOR, ^
 
 |              |              |
 |--------------|--------------|
@@ -73,21 +73,21 @@
 
 ## Bit tasks
 
-**Set**
+### Set
 
 ```
 setBit(bits, i)
   bits | (1 << i)
 ```
 
-**Clear**
+### Clear
 
 ```
 clearBit(bits, i)
   bits & ~(1 << i)
 ```
 
-**Update**
+### Update
 
 ```
 updateBit(bits, i, bit)
@@ -95,14 +95,18 @@ updateBit(bits, i, bit)
   bits | (bit << i)
 ```
 
-**Clear (from left most to i)**
+### Clear Left
+
+Clear from the leftmost bit (highest-order) to bit at index i (inclusive)
 
 ```
 clearLeftBits(bits, i)
   bits & ((1 << i) - 1)
 ```
 
-**Clear (from right most to i)**
+### Clear Right
+
+Clear from the rightmost bit (lowest-order) to bit at index i (inclusive)
 
 ```
 clearRightBits(bits, i)
