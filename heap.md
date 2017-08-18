@@ -1,6 +1,6 @@
 # Heap
 
-* Binary tree with extra property.
+* Binary tree with an extra property.
 * Types:
   * Max.
   * Min.
