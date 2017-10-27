@@ -64,6 +64,9 @@ crucial when trying to solve a DP problem.
 practice problem.
 - Build the intuition to figure out the **recurrence formula**.
 
+## Video resource
+- [Longest Common Subsequence](https://www.youtube.com/watch?v=tYzNrCul5OU)
+
 ## Practice problems
 1. [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
 2. [DP: Coin Change](https://www.hackerrank.com/challenges/ctci-coin-change/problem)
