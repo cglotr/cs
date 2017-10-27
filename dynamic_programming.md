@@ -70,3 +70,4 @@ practice problem.
 ## Practice problems
 1. [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
 2. [DP: Coin Change](https://www.hackerrank.com/challenges/ctci-coin-change/problem)
+3. [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/)
