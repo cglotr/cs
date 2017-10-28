@@ -73,3 +73,4 @@ practice problem.
 3. [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/)
 4. [343. Integer Break](https://leetcode.com/problems/integer-break/description/)
 5. [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
+6. [650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/)
