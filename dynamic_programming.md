@@ -66,6 +66,7 @@ practice problem.
 
 ## Video resource
 - [Longest Common Subsequence](https://www.youtube.com/watch?v=tYzNrCul5OU)
+- [0/1 Knapsack Problem](https://www.youtube.com/watch?v=qOUsP4eoYls)
 
 ## Practice problems
 1. [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
