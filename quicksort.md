@@ -12,11 +12,11 @@ quicksort(A, p, r):
 
 partition(A, p, r):
     pivot = A[r]
-    a = p
-    for b = p to r - 1:
-        if A[b] <= pivot:
-            swap(A, b, a)
-            a++
-    swap(A, a, r)
-    return a
+    i = p - 1
+    for j = p to r - 1:
+        if A[j] <= pivot:
+            i += 1
+            swap(A, i, j)
+    swap(A, i + 1, r)
+    return i + 1
 ```
