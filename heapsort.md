@@ -1,7 +1,7 @@
 # Heapsort
 
 * `O(nlogn)` time.
-* `O(1)` space. *Done in-place with no extra space! **Much beauty, much elegance!***
+* `O(1)` space (done in-place with no extra space).
 
 ```
 heapsort(A):

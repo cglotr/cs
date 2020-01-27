@@ -1,7 +1,7 @@
 # Quicksort
 
-* `O(nlogn)` time
-* `O(logn)` space due to recursion memory requirement. In-place
+* `O(nlogn)` time.
+* `O(logn)` space due to recursion memory requirement (in-place).
 
 ```
 quicksort(A, p, r):
