@@ -12,3 +12,9 @@
 #### Notes
 
 1. Use Union Find/Disjoint Set Union (DSU) to help with union operation
+
+## Practice
+
+#### LeetCode
+
+- https://leetcode.com/contest/weekly-contest-206/problems/min-cost-to-connect-all-points/
