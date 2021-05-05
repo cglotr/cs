@@ -1,4 +1,4 @@
-# Generic Minimum Spanning Tree (MST)
+#### Generic Minimum Spanning Tree (MST)
 
 ```
 GenericMst(G, w)
