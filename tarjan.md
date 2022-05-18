@@ -31,6 +31,9 @@ tarjan_bridges(graph, n):
     return bridges
 ```
 
+### Practice
+- https://leetcode.com/problems/critical-connections-in-a-network/
+
 ### Resources
 - https://codeforces.com/blog/entry/71146
 - https://www.youtube.com/watch?v=aZXi1unBdJA
