@@ -1,27 +1,42 @@
 # Topological sort
 Ordering of nodes in a directed acyclic graph (DAG) where for each directed edge from node `u` to `v`, node `u` comes first before node `v` in the ordering.
 
-[Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting#Kahn's_algorithm)
+## Kahn's algorithm
+
 ```
-L ← Empty list that will contain the sorted elements
-S ← Set of all nodes with no incoming edge
-
-while S is not empty do
-    remove a node n from S
-    add n to L
-    for each node m with an edge e from n to m do
-        remove edge e from the graph
-        if m has no other incoming edges then
-            insert m into S
-
-if graph has edges then
-    return error   (graph has at least one cycle)
-else 
-    return L   (a topologically sorted order)
+def kahns(graph, n):
+    topological_sort = [n](null)
+    safe_edges = {}
+    incoming_degrees = [n](0)
+    
+    for u, v in graph:
+        incoming_degrees[v] += 1
+    
+    for u in [0 -> n):
+        if incoming_degrees[u] == 0:
+            safe_edges <- u
+            
+    index = 0
+    
+    while safe_edges:
+        u <- safe_edges
+        topological_sort[index] = u
+        index += 1
+        
+        for v in graph[u]:
+            incoming_degrees[v] -= 1
+            if incoming_degrees[v] <= 0:
+                safe_edges <- v
+                
+    if index < n:
+        return null
+        
+    return topological_sort
 ```
 
-## Time complexity
+### Time complexity
 `O(V + E)`
 
-## Resources
-- [William Fiset](https://www.youtube.com/watch?v=cIBFEhD77b4)
+### Resources
+- [Wiki](https://en.wikipedia.org/wiki/Topological_sorting#Kahn's_algorithm)
+- [WilliamFiset](https://www.youtube.com/watch?v=cIBFEhD77b4)
