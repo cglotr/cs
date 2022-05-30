@@ -37,6 +37,9 @@ def kahns(graph, n):
 ### Time complexity
 `O(V + E)`
 
+### Practice
+- https://leetcode.com/problems/parallel-courses/
+
 ### Resources
 - [Wiki](https://en.wikipedia.org/wiki/Topological_sorting#Kahn's_algorithm)
 - [WilliamFiset](https://www.youtube.com/watch?v=cIBFEhD77b4)
