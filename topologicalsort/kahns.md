@@ -1,3 +1,6 @@
+# Topological sort
+Ordering of nodes in a directed acyclic graph (DAG) where for each directed edge from node `u` to `v`, node `u` comes first before node `v` in the ordering.
+
 [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting#Kahn's_algorithm)
 ```
 L ← Empty list that will contain the sorted elements
