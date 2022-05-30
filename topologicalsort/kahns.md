@@ -19,3 +19,6 @@ if graph has edges then
 else 
     return L   (a topologically sorted order)
 ```
+
+## Time complexity
+`O(V + E)`
