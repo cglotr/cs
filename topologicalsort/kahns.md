@@ -22,3 +22,6 @@ else
 
 ## Time complexity
 `O(V + E)`
+
+## Resources
+- [William Fiset](https://www.youtube.com/watch?v=cIBFEhD77b4)
