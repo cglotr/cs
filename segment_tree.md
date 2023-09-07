@@ -5,3 +5,4 @@
 * [307. Range Sum Query - Mutable](https://github.com/cglotr/cs/blob/master/leetcode/000307/problem.md)
 * [327. Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)
 * [732. My Calendar III](https://leetcode.com/problems/my-calendar-iii/)
+  [2424. Longest Uploaded Prefix](https://leetcode.com/problems/longest-uploaded-prefix/)
