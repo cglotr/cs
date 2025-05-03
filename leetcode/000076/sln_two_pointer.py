@@ -37,7 +37,4 @@ class Solution:
             while is_good():
                 capture(r)
 
-        while is_good():
-            capture(len(s) - 1)
-
         return ans
