@@ -20,8 +20,8 @@ func reorderList(head *ListNode) {
 		}
 
 		if root_new == node || root_new.Next == node {
-            node.Next = nil
-            
+			node.Next = nil
+
 			return nil
 		} else {
 			tmp := root_new.Next
